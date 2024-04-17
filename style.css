@@ -34,8 +34,9 @@
   background-image: url(bg.jpg);
   background-size: cover;
   display: flex;
-  justify-self: flex-start;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   padding: 1rem;
   font-weight: bold;
   text-shadow: 2px;
