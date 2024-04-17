@@ -38,16 +38,32 @@
   justify-content: center;
   align-items: flex-start;
   padding: 1rem;
-  font-weight: bold;
-  text-shadow: 2px;
 }
 
-.text-small {
+.button {
+  width: 164px;
+  height: 41px;
+  border: 3px solid white;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+}
+
+.text-bold-small {
   font: 18px Roboto;
+  font-weight: bold;
 }
 
-.text-big {
+.text-bold-big {
   font: 36px Roboto;
+  font-weight: bold;
+}
+
+.paragraph {
+  margin: 1.5rem 0;
 }
 
 @media (min-width: 960px) {
