@@ -2,12 +2,19 @@
   color: white;
 }
 
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.padding {
+  padding: 3rem 1rem;
+}
+
 .container {
   margin: 1rem auto;
   width: 90%;
-  height: 3882px;
-  display: flex;
-  flex-direction: column;
   background-color: goldenrod;
 }
 
@@ -30,32 +37,10 @@
 
 .landing-page {
   color: white;
-  height: 574px;
+  height: 100vh;
   background-image: url(img/bg.jpg);
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: flex-start;
-  padding: 1rem;
-}
-
-.specialists-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  color: black;
-  padding: 1rem;
-}
-
-.specialist-photo {
-  clip-path: circle(50%);
-  width: 221px;
-  height: 221px;
-  margin-top: 3rem;
-  margin-bottom: 1.5rem;
 }
 
 .button {
@@ -70,8 +55,50 @@
   text-decoration: none;
 }
 
+.specialists-box {
+  align-items: center;
+  background-color: white;
+  color: black;
+}
+
+.specialist-name {
+  margin: 1.5rem 0;
+  align-self: flex-start;
+}
+
+.specialist-photo {
+  clip-path: circle(50%);
+  width: 221px;
+  height: 221px;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.offer {
+  background-color: #405d78;
+  color: white;
+  text-align: center;
+  align-items: center;
+}
+
+.offer-title {
+  margin: 2rem 0;
+}
+
+.service {
+  width: 339px;
+  height: 332px;
+  background-color: #f1f1f1;
+  color: black;
+  margin: 1rem 0;
+}
+
 .text-small {
   font: 18px Roboto;
+}
+
+.text-normal {
+  font: 26px Roboto;
 }
 
 .text-bold-small {
