@@ -1,17 +1,3 @@
-.white {
-  color: white;
-}
-
-.flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.padding {
-  padding: 3rem 1rem;
-}
-
 .container {
   margin: 1rem auto;
   width: 90%;
@@ -74,7 +60,7 @@
   margin-bottom: 1.5rem;
 }
 
-.offer {
+.offer-box {
   background-color: #405d78;
   color: white;
   text-align: center;
@@ -94,6 +80,20 @@
   background-color: #f1f1f1;
   color: black;
   margin: 1rem 0;
+  place-self: center;
+}
+
+.footer-box {
+  background-color: #4e4e4e;
+  align-items: center;
+  color: white;
+  padding: 2rem 1rem;
+  height: 147px;
+}
+
+.footer-icon {
+  color: white;
+  margin: 0 10px;
 }
 
 .text-small {
@@ -121,6 +121,24 @@
 
 .text-justified {
   text-align: justify;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.padding {
+  padding: 3rem 1rem;
 }
 
 @media (min-width: 960px) {
