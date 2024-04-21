@@ -1,5 +1,9 @@
+html {
+  scroll-behavior: smooth !important;
+}
+
 .container {
-  margin: 1rem auto;
+  margin: 0 auto;
   width: 90%;
   background-color: goldenrod;
 }
@@ -13,7 +17,7 @@
 }
 
 .navigation:first-of-type {
-  padding-left: 1rem;
+  padding-left: 14px;
 }
 
 .nav-link {
@@ -21,12 +25,20 @@
   color: white;
 }
 
+.shadow {
+  background: rgba(0, 0, 0, 0.15);
+  width: inherit;
+  height: inherit;
+  position: absolute;
+}
+
 .landing-page {
   color: white;
-  height: 100vh;
+  height: calc(100vh - 50px);
   background-image: url(img/bg.jpg);
   background-size: cover;
   align-items: flex-start;
+  position: relative;
 }
 
 .button {
@@ -44,11 +56,10 @@
 .specialists-box {
   align-items: center;
   background-color: white;
-  color: black;
 }
 
 .specialist-name {
-  margin: 1.5rem 0;
+  margin-bottom: 1em;
   align-self: flex-start;
 }
 
@@ -56,22 +67,32 @@
   clip-path: circle(50%);
   width: 221px;
   height: 221px;
-  margin-top: 3rem;
-  margin-bottom: 1.5rem;
+  margin-top: 54px;
+  margin-bottom: 42px;
 }
 
 .offer-box {
   background-color: #405d78;
   color: white;
   text-align: center;
-  align-items: center;
-  display: grid;
-  justify-content: center;
-  align-content: center;
+}
+
+.ellipse {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: #e07a64;
+  position: absolute;
+  top: -17px;
+  left: -15px;
 }
 
 .offer-title {
-  margin: 2rem 0;
+  margin: 42px 0;
+}
+
+.services-box {
+  width: 100%;
 }
 
 .service {
@@ -79,15 +100,16 @@
   height: 332px;
   background-color: #f1f1f1;
   color: black;
-  margin: 1rem 0;
+  margin: 17px 0;
   place-self: center;
+  position: relative;
 }
 
 .footer-box {
   background-color: #4e4e4e;
   align-items: center;
   color: white;
-  padding: 2rem 1rem;
+  padding: 38px 0;
   height: 147px;
 }
 
@@ -115,8 +137,7 @@
 }
 
 .paragraph {
-  margin: 1.5rem 0;
-  align-self: flex-start;
+  margin: 44px 0;
 }
 
 .text-justified {
@@ -138,7 +159,7 @@
 }
 
 .padding {
-  padding: 3rem 1rem;
+  padding: 34px 14px;
 }
 
 @media (min-width: 960px) {
