@@ -5,24 +5,22 @@ html {
 .container {
   margin: 0 auto;
   width: 90%;
-  background-color: goldenrod;
 }
 
 .navigation {
   height: 50px;
+  width: 100%;
   background: #4e4e4e;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-.navigation:first-of-type {
-  padding-left: 14px;
-}
-
-.nav-link {
+.nav-name {
   text-decoration: none;
   color: white;
+  padding-left: 14px;
+  justify-self: flex-start;
 }
 
 .shadow {
@@ -33,12 +31,18 @@ html {
 }
 
 .landing-page {
-  color: white;
   height: calc(100vh - 50px);
+  width: 100%;
   background-image: url(img/bg.jpg);
   background-size: cover;
-  align-items: flex-start;
   position: relative;
+}
+
+.landing-page-box {
+  color: white;
+  align-items: flex-start;
+  width: inherit;
+  height: inherit;
 }
 
 .button {
@@ -162,9 +166,42 @@ html {
   padding: 34px 14px;
 }
 
+.desktop-only {
+  display: none;
+}
+
 @media (min-width: 960px) {
   .container {
     background-color: red;
     width: 960px;
+  }
+
+  .nav-name {
+    padding-left: 94px;
+    position: absolute;
+    left: 94px;
+  }
+
+  .nav-link {
+    color: #f1f1f1;
+    text-decoration: none;
+    margin: 0 23px;
+  }
+
+  .nav-link:last-of-type {
+    margin-right: 90px;
+  }
+
+  .navigation {
+    position: relative;
+  }
+
+  .navigation-links-box {
+    display: flex;
+    flex-direction: row;
+    height: inherit;
+    width: inherit;
+    justify-content: flex-end;
+    align-items: center;
   }
 }

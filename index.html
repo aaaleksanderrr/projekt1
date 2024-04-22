@@ -16,21 +16,28 @@
     />
   </head>
   <body>
-    <div class="container flex" id="top">
+    <div class="container flex">
       <div class="navigation">
-        <a href="#top" class="nav-link text-bold-small">nazwa firmy</a>
-      </div>
-      <div class="landing-page">
-        <div class="shadow flex padding">
-          <p class="text-bold-big">Nasza firma oferuje najwyższej jakości produkty.</p>
-          <p class="paragraph text-bold-small">Nie wierz nam na słowo - sprawdź</p>
-          <a href="#offer" class="button text-bold-small">oferta</a>
+        <div class="desktop-only navigation-links-box">
+          <span class="nav-name text-bold-small">nazwa firmy</span>
+          <a href="#about" class="nav-link text-small">o nas</a>
+          <a href="#offer" class="nav-link text-small">oferta</a>
+          <a href="#" class="nav-link text-small">kontakt</a>
         </div>
       </div>
-      <div class="specialists-box flex padding">
+      <div class="landing-page">
+        <div class="shadow">
+          <div class="landing-page-box flex padding">
+            <p class="text-bold-big">Nasza firma oferuje najwyższej jakości produkty.</p>
+            <p class="paragraph text-bold-small">Nie wierz nam na słowo - sprawdź</p>
+            <a href="#offer" class="button text-bold-small">oferta</a>
+          </div>
+        </div>
+      </div>
+      <div class="specialists-box flex padding" id="about">
         <p class="text-bold-big">Nasi specjaliści</p>
         <img src="img/philip.jpg" class="specialist-photo" />
-        <p class="specialist-name text-bold-small">Philip K. Dick [dział obsługi klienta]</p>
+        <p class="specialist-name text-bold-small">Philip K. Dick [ dział obsługi klienta ]</p>
         <p class="text-small text-justified">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel massa et lacus egestas
           cursus a non magna. Fusce scelerisque blandit nunc, id malesuada ex lobortis a. Integer
@@ -39,7 +46,7 @@
         </p>
 
         <img src="img/ursula.jpg" class="specialist-photo" />
-        <p class="specialist-name text-bold-small">Ursula Le Guin [dział marketingu]</p>
+        <p class="specialist-name text-bold-small">Ursula Le Guin [ dział marketingu ]</p>
         <p class="text-small text-justified">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel massa et lacus egestas
           cursus a non magna. Fusce scelerisque blandit nunc, id malesuada ex lobortis a. Integer
