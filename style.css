@@ -14,13 +14,14 @@ html {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
 }
 
 .nav-name {
   text-decoration: none;
   color: white;
-  padding-left: 14px;
-  justify-self: flex-start;
+  left: 14px;
+  position: absolute;
 }
 
 .shadow {
@@ -171,13 +172,22 @@ html {
 }
 
 @media (min-width: 960px) {
+  .desktop-only {
+    display: initial;
+  }
+
   .container {
     background-color: red;
     width: 960px;
   }
 
+  .navigation {
+    flex-direction: row;
+    width: inherit;
+    justify-content: flex-end;
+  }
+
   .nav-name {
-    padding-left: 94px;
     position: absolute;
     left: 94px;
   }
@@ -192,16 +202,24 @@ html {
     margin-right: 90px;
   }
 
-  .navigation {
-    position: relative;
+  .padding {
+    padding: 51px 94px;
   }
 
-  .navigation-links-box {
-    display: flex;
-    flex-direction: row;
-    height: inherit;
-    width: inherit;
-    justify-content: flex-end;
-    align-items: center;
+  .disabled {
+    cursor: not-allowed;
+  }
+}
+
+@media (hover: hover) {
+  .nav-link:hover {
+    color: white;
+  }
+
+  .button:hover {
+    transition: background-color 1s ease-in-out;
+    transition: color 1s ease-in-out;
+    background-color: white;
+    color: black;
   }
 }
