@@ -7,7 +7,7 @@ html {
   width: 90%;
 }
 
-.navigation {
+.navigation-section {
   height: 50px;
   width: 100%;
   background: #4e4e4e;
@@ -31,7 +31,7 @@ html {
   position: absolute;
 }
 
-.landing-page {
+.landing-page-section {
   height: calc(100vh - 50px);
   width: 100%;
   background-image: url(img/bg.jpg);
@@ -46,6 +46,10 @@ html {
   height: inherit;
 }
 
+.landing-page-title {
+  font: bold 36px Roboto;
+}
+
 .button {
   width: 164px;
   height: 41px;
@@ -58,9 +62,25 @@ html {
   text-decoration: none;
 }
 
-.specialists-box {
+.specialist-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.specialist-title {
+  font: 36px Roboto;
+  font-weight: bold;
+}
+
+.specialists-section {
   align-items: center;
   background-color: white;
+}
+
+.specialist-info-box {
+  display: flex;
+  flex-direction: column;
 }
 
 .specialist-name {
@@ -68,15 +88,29 @@ html {
   align-self: flex-start;
 }
 
+.philip {
+  --photo: url(img/philip.jpg);
+}
+
+.ursula {
+  --photo: url(img/ursula.jpg);
+}
+
 .specialist-photo {
-  clip-path: circle(50%);
-  width: 221px;
-  height: 221px;
+  background: var(--photo) center no-repeat;
+  border-radius: 50%;
+  width: 197px;
+  height: 197px;
+  aspect-ratio: 1;
   margin-top: 54px;
   margin-bottom: 42px;
 }
 
-.offer-box {
+.specialist-text {
+  text-align: justify;
+}
+
+.offer-section {
   background-color: #405d78;
   color: white;
   text-align: center;
@@ -110,7 +144,7 @@ html {
   position: relative;
 }
 
-.footer-box {
+.footer-section {
   background-color: #4e4e4e;
   align-items: center;
   color: white;
@@ -132,21 +166,11 @@ html {
 }
 
 .text-bold-small {
-  font: 18px Roboto;
-  font-weight: bold;
-}
-
-.text-bold-big {
-  font: 36px Roboto;
-  font-weight: bold;
+  font: bold 18px Roboto;
 }
 
 .paragraph {
   margin: 44px 0;
-}
-
-.text-justified {
-  text-align: justify;
 }
 
 .flex {
@@ -159,6 +183,15 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-content {
   margin-top: 10px;
   width: 100%;
 }
@@ -181,7 +214,7 @@ html {
     width: 960px;
   }
 
-  .navigation {
+  .navigation-section {
     flex-direction: row;
     width: inherit;
     justify-content: flex-end;
@@ -200,6 +233,31 @@ html {
 
   .nav-link:last-of-type {
     margin-right: 90px;
+  }
+
+  .specialist-title {
+    align-self: flex-start;
+  }
+
+  .specialist-box {
+    flex-direction: row;
+    gap: 60px;
+  }
+
+  .specialist-name {
+    align-self: unset;
+  }
+
+  .specialist-box:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
+
+  .specialist-box:nth-of-type(even) .specialist-info-box {
+    text-align: right;
+  }
+
+  .specialist-text {
+    text-align: unset;
   }
 
   .padding {
