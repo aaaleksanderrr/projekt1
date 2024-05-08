@@ -1,5 +1,5 @@
 html {
-  scroll-behavior: smooth !important;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -69,8 +69,7 @@ html {
 }
 
 .specialist-title {
-  font: 36px Roboto;
-  font-weight: bold;
+  font: bold 36px Roboto;
 }
 
 .specialists-section {
@@ -114,6 +113,26 @@ html {
   background-color: #405d78;
   color: white;
   text-align: center;
+  align-items: center;
+}
+
+.offer-title-box {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  width: 100%;
+}
+
+.offer-title {
+  margin: 76px 0 59px 0;
+  font: 26px Roboto;
+}
+
+.services-box {
+  width: 100%;
+  justify-content: center;
+  gap: 42px;
+  margin-bottom: 45px;
 }
 
 .ellipse {
@@ -126,20 +145,11 @@ html {
   left: -15px;
 }
 
-.offer-title {
-  margin: 42px 0;
-}
-
-.services-box {
-  width: 100%;
-}
-
 .service {
   width: 339px;
   height: 332px;
   background-color: #f1f1f1;
   color: black;
-  margin: 17px 0;
   place-self: center;
   position: relative;
 }
@@ -161,12 +171,12 @@ html {
   font: 18px Roboto;
 }
 
-.text-normal {
-  font: 26px Roboto;
-}
-
 .text-bold-small {
   font: bold 18px Roboto;
+}
+
+.text-normal {
+  font: 26px Roboto;
 }
 
 .paragraph {
@@ -210,7 +220,7 @@ html {
   }
 
   .container {
-    background-color: red;
+    background-color: greenyellow;
     width: 960px;
   }
 
@@ -258,6 +268,36 @@ html {
 
   .specialist-text {
     text-align: unset;
+  }
+
+  .offer-title-box {
+    justify-content: left;
+  }
+
+  .offer-title {
+    font: bold 36px Roboto;
+    margin: 50px 0 64px 100px;
+  }
+
+  .services-box {
+    width: 724px;
+    flex-direction: row;
+    gap: 62px;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+  }
+
+  .ellipse {
+    width: 22px;
+    height: 22px;
+    top: -11px;
+    left: -9px;
+  }
+
+  .service {
+    width: 198px;
+    height: 194px;
+    /* margin: 17px 0; */
   }
 
   .padding {
