@@ -5,6 +5,9 @@ html {
 .container {
   margin: 0 auto;
   width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .navigation-section {
@@ -183,7 +186,7 @@ html {
   margin: 44px 0;
 }
 
-.flex {
+.flex-column {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -192,12 +195,6 @@ html {
 .flex-row {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-}
-
-.flex-column {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 
@@ -220,7 +217,6 @@ html {
   }
 
   .container {
-    background-color: greenyellow;
     width: 960px;
   }
 
@@ -231,7 +227,6 @@ html {
   }
 
   .nav-name {
-    position: absolute;
     left: 94px;
   }
 
@@ -297,7 +292,20 @@ html {
   .service {
     width: 198px;
     height: 194px;
-    /* margin: 17px 0; */
+  }
+
+  .footer-section {
+    align-items: flex-start;
+    height: initial;
+    position: relative;
+    padding: 25px 94px;
+  }
+
+  .footer-content {
+    display: inline;
+    width: initial;
+    position: absolute;
+    right: 82px;
   }
 
   .padding {
