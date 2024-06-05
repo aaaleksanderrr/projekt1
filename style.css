@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: Roboto;
+}
+
 .container {
   margin: 0 auto;
   width: 90%;
@@ -27,19 +31,13 @@ html {
   position: absolute;
 }
 
-.shadow {
-  background: rgba(0, 0, 0, 0.15);
-  width: inherit;
-  height: inherit;
-  position: absolute;
-}
-
 .landing-page-section {
   height: calc(100vh - 50px);
   width: 100%;
   background-image: url(img/bg.jpg);
   background-size: cover;
   position: relative;
+  border-image: fill 0 linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15));
 }
 
 .landing-page-box {
@@ -50,7 +48,7 @@ html {
 }
 
 .landing-page-title {
-  font: bold 36px Roboto;
+  font-size: 36px;
 }
 
 .button {
@@ -72,7 +70,7 @@ html {
 }
 
 .specialist-title {
-  font: bold 36px Roboto;
+  font-size: 36px;
 }
 
 .specialists-section {
@@ -128,7 +126,7 @@ html {
 
 .offer-title {
   margin: 76px 0 59px 0;
-  font: 26px Roboto;
+  font-size: 26px;
 }
 
 .services-box {
@@ -171,15 +169,15 @@ html {
 }
 
 .text-small {
-  font: 18px Roboto;
+  font-size: 18px;
 }
 
-.text-bold-small {
-  font: bold 18px Roboto;
+.text-bold {
+  font-weight: bold;
 }
 
 .text-normal {
-  font: 26px Roboto;
+  font-size: 26px;
 }
 
 .paragraph {
@@ -203,7 +201,7 @@ html {
   width: 100%;
 }
 
-.padding {
+.padding-small {
   padding: 34px 14px;
 }
 
@@ -236,7 +234,7 @@ html {
     margin: 0 23px;
   }
 
-  .nav-link:last-of-type {
+  .nav-link:last-child {
     margin-right: 90px;
   }
 
@@ -246,6 +244,7 @@ html {
 
   .specialist-box {
     flex-direction: row;
+
     gap: 60px;
   }
 
@@ -270,7 +269,7 @@ html {
   }
 
   .offer-title {
-    font: bold 36px Roboto;
+    font-size: 36px;
     margin: 50px 0 64px 100px;
   }
 
@@ -308,7 +307,7 @@ html {
     right: 82px;
   }
 
-  .padding {
+  .padding-small {
     padding: 51px 94px;
   }
 
@@ -322,8 +321,12 @@ html {
     color: white;
   }
 
+  .button {
+    transition-duration: 1s;
+  }
+
   .button:hover {
-    transition: background-color 1s ease-in-out;
+    transition: background-color;
     transition: color 1s ease-in-out;
     background-color: white;
     color: black;
