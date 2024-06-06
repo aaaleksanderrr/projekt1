@@ -6,38 +6,58 @@ body {
   font-family: Roboto;
 }
 
-.container {
+.navigation-container {
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  background: #4e4e4e;
 }
 
 .navigation-section {
   height: 50px;
-  width: 100%;
-  background: #4e4e4e;
+  width: 90%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  position: relative;
+}
+
+.navigation-subsection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-subsection-right {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .nav-name {
-  text-decoration: none;
   color: white;
-  left: 14px;
-  position: absolute;
+  text-wrap: nowrap;
+  margin-left: 14px;
 }
 
-.landing-page-section {
+.landing-page-container {
   height: calc(100vh - 50px);
   width: 100%;
   background-image: url(img/bg.jpg);
   background-size: cover;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-image: fill 0 linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15));
+}
+
+.landing-page-section {
+  height: calc(100vh - 50px);
+  width: 90%;
+  background-size: cover;
 }
 
 .landing-page-box {
@@ -63,6 +83,18 @@ body {
   text-decoration: none;
 }
 
+.specialist-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.specialists-section {
+  width: 90%;
+  background-color: white;
+}
+
 .specialist-box {
   display: flex;
   flex-direction: column;
@@ -71,11 +103,6 @@ body {
 
 .specialist-title {
   font-size: 36px;
-}
-
-.specialists-section {
-  align-items: center;
-  background-color: white;
 }
 
 .specialist-info-box {
@@ -110,8 +137,16 @@ body {
   text-align: justify;
 }
 
-.offer-section {
+.offer-container {
+  width: 100%;
+  display: flex;
   background-color: #405d78;
+  align-items: center;
+  justify-content: center;
+}
+
+.offer-section {
+  width: 90%;
   color: white;
   text-align: center;
   align-items: center;
@@ -155,15 +190,38 @@ body {
   position: relative;
 }
 
-.footer-section {
+.footer-container {
+  width: 100%;
   background-color: #4e4e4e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-section {
   align-items: center;
   color: white;
   padding: 38px 0;
   height: 147px;
 }
 
+.footer-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 10px;
+}
+
 .footer-icon {
+  display: inline-block;
   color: white;
   margin: 0 10px;
 }
@@ -196,11 +254,6 @@ body {
   justify-content: center;
 }
 
-.footer-content {
-  margin-top: 10px;
-  width: 100%;
-}
-
 .padding-small {
   padding: 34px 14px;
 }
@@ -214,18 +267,17 @@ body {
     display: initial;
   }
 
-  .container {
+  .section-width {
     width: 960px;
   }
 
   .navigation-section {
     flex-direction: row;
-    width: inherit;
     justify-content: flex-end;
   }
 
   .nav-name {
-    left: 94px;
+    margin-left: 94px;
   }
 
   .nav-link {
@@ -244,7 +296,6 @@ body {
 
   .specialist-box {
     flex-direction: row;
-
     gap: 60px;
   }
 
@@ -295,16 +346,29 @@ body {
 
   .footer-section {
     align-items: flex-start;
-    height: initial;
-    position: relative;
+    height: 71px;
     padding: 25px 94px;
   }
 
   .footer-content {
-    display: inline;
-    width: initial;
-    position: absolute;
-    right: 82px;
+    width: 100%;
+    flex-direction: row;
+    margin-top: 0;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+  }
+
+  .footer-text {
+    text-wrap: nowrap;
+  }
+
+  .footer-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 0;
+    width: inherit;
   }
 
   .padding-small {

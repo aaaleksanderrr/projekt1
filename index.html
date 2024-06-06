@@ -16,14 +16,20 @@
     />
   </head>
   <body>
-    <div class="container">
-      <div class="navigation-section">
-        <span class="nav-name text-small text-bold">nazwa firmy</span>
-        <a href="#about" class="desktop-only nav-link text-small">o nas</a>
-        <a href="#offer" class="desktop-only nav-link text-small">oferta</a>
-        <span class="desktop-only nav-link text-small disabled">kontakt</span>
+    <div class="navigation-container">
+      <div class="navigation-section section-width">
+        <div class="navigation-subsection">
+          <span class="nav-name text-small text-bold">nazwa firmy</span>
+          <div class="navigation-subsection-right">
+            <a href="#about" class="desktop-only nav-link text-small">o nas</a>
+            <a href="#offer" class="desktop-only nav-link text-small">oferta</a>
+            <span class="desktop-only nav-link text-small disabled">kontakt</span>
+          </div>
+        </div>
       </div>
-      <div class="landing-page-section">
+    </div>
+    <div class="landing-page-container">
+      <div class="landing-page-section section-width">
         <div class="landing-page-box flex-column padding-small">
           <h1 class="landing-page-title text-bold">
             Nasza firma oferuje najwyższej jakości produkty.
@@ -32,7 +38,9 @@
           <a href="#offer" class="button text-small text-bold">oferta</a>
         </div>
       </div>
-      <div class="specialists-section flex-column padding-small" id="about">
+    </div>
+    <div class="specialist-container">
+      <div class="specialists-section section-width flex-column padding-small" id="about">
         <p class="specialist-title text-bold">Nasi specjaliści</p>
         <div class="specialist-box">
           <div class="philip specialist-photo"></div>
@@ -64,8 +72,9 @@
           </div>
         </div>
       </div>
-
-      <div class="offer-section flex-column" id="offer">
+    </div>
+    <div class="offer-container">
+      <div class="offer-section section-width flex-column" id="offer">
         <div class="offer-title-box">
           <span class="offer-title text-bold">Czym zajmuje się nasza firma?</span>
         </div>
@@ -81,14 +90,18 @@
           <div class="service flex-column text-normal">Usługa 6</div>
         </div>
       </div>
+    </div>
 
-      <div class="footer-section flex-column text-small">
-        Nazwa firmy - wszelkie prawa zastrzeżone, 2024
-        <div class="flex-row footer-content">
-          <a href="#"><i class="fa fa-instagram fa-2x footer-icon" aria-hidden="true"></i> </a>
-          <a href="#"
-            ><i class="fa fa-facebook-square fa-2x footer-icon" aria-hidden="true"></i>
-          </a>
+    <div class="footer-container">
+      <div class="footer-section section-width section-width flex-column text-small">
+        <div class="footer-content">
+          <p class="footer-text">Nazwa firmy - wszelkie prawa zastrzeżone, 2024</p>
+          <div class="footer-icons">
+            <a href="#"><i class="fa fa-instagram fa-2x footer-icon" aria-hidden="true"></i> </a>
+            <a href="#"
+              ><i class="fa fa-facebook-square fa-2x footer-icon" aria-hidden="true"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
