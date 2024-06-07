@@ -126,8 +126,9 @@ body {
 .specialist-photo {
   background: var(--photo) center no-repeat;
   border-radius: 50%;
-  width: 197px;
-  height: 197px;
+  width: 200px;
+  height: 200px;
+  min-width: 200px;
   aspect-ratio: 1;
   margin-top: 54px;
   margin-bottom: 42px;
@@ -267,7 +268,7 @@ body {
     display: initial;
   }
 
-  .section-width {
+  .section-default-width {
     width: 960px;
   }
 
@@ -394,5 +395,14 @@ body {
     transition: color 1s ease-in-out;
     background-color: white;
     color: black;
+  }
+
+  .service {
+    transition-duration: 0.5s;
+  }
+
+  .service:hover {
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1.05);
   }
 }
